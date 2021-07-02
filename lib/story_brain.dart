@@ -60,6 +60,8 @@ class StoryBrain {
       _storyNumber = 5;
     } else if (choiceNumber == 2 && _storyNumber == 2) {
       _storyNumber = 4;
+    } else if (_storyNumber == 3 || _storyNumber == 4 || _storyNumber == 5) {
+      _storyNumber = 0;
     }
   }
 
