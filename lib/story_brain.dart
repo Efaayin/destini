@@ -1,7 +1,7 @@
 import 'package:destini/story.dart';
 
 class StoryBrain {
-  int storyNumber = 0;
+  int storyNumber = 2;
 
   List<Story> _storyData = [
     Story(
@@ -47,7 +47,13 @@ class StoryBrain {
     return _storyData[storyNumber].choice2;
   }
 
-  void nextStory(choiceNumber) {}
+  //Step 21 - Using the story plan, update nextStory() to change the storyNumber depending on the choice made by the user. e.g. if choiceNumber was equal to 1 and the storyNumber is 0, the storyNumber should become 2.
+
+  void nextStory(choiceNumber) {
+    if (choiceNumber == 1) {
+      
+    }
+  }
 }
 
 //TODO: Step 23 - Use the storyNumber property inside getStory(), getChoice1() and getChoice2() so that it gets the updated story and choices rather than always just the first (0th) one.
